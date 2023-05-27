@@ -119,7 +119,7 @@ class Choice(models.Model):
     on_delete=models.CASCADE,
     )
     answer = models.BooleanField(default=True)
-    contenido = models.CharField(null=False, default="Content", max_length=30)
+    content = models.CharField(null=False, default="Content", max_length=300)
 
 # DOES THIS CODE MEET THE REQUIREMENTS?
 class Submission(models.Model):
